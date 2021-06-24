@@ -1,4 +1,4 @@
-package com.domain.model;
+package com.bank.model;
 
 public class Account {
 

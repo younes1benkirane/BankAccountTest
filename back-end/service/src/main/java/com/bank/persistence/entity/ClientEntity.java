@@ -1,4 +1,4 @@
-package com.service.model;
+package com.bank.persistence.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;

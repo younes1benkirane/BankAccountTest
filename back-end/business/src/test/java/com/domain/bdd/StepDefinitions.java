@@ -1,12 +1,27 @@
 package com.domain.bdd;
 
-import cucumber.api.java.en.Given;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import org.assertj.core.api.Assertions;
 
 public class StepDefinitions {
 
-    @Given("'(.*)'")
-    public void fix_me(String element) {
-        Assertions.fail("not implemented");
+    private int element;
+    private int result;
+
+    @Given("the number '{}'")
+    public void initElement(int element) {
+        this.element = element;
     }
+
+    @When("the number is multiplied by '{}'")
+    public void doMultiply(int mult) {
+        this.result = element * mult;
+    }
+
+    @When("the result should be '{}'")
+    public void checkResult(int expectedResult) {
+        Assertions.assertThat(this.result).isEqualTo(expectedResult);
+    }
+
 }

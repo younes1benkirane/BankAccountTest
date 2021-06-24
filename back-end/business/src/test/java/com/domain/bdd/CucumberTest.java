@@ -1,10 +1,10 @@
 package com.domain.bdd;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.platform.engine.Cucumber;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features", glue = "com.domain.bdd", tags = {"~@Ignore"})
+@Cucumber
+@CucumberOptions(publish = true)
 public class CucumberTest {
+
 }

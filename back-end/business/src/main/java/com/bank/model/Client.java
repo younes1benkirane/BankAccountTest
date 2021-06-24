@@ -1,4 +1,4 @@
-package com.domain.model;
+package com.bank.model;
 
 import java.util.ArrayList;
 import java.util.List;
