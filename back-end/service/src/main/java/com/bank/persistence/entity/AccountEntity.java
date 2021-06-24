@@ -12,7 +12,7 @@ public class AccountEntity {
 
     private String code;
 
-    @OneToOne
+    @ManyToOne
     private ClientEntity owner;
 
     private double balance = 0;

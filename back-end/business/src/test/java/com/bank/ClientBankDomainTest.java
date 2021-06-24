@@ -1,7 +1,7 @@
-package com.domain.tdd;
+package com.bank;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class ClientBankDomainTest {
 
