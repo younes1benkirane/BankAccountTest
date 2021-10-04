@@ -9,17 +9,17 @@ public class StepDefinitions {
     private int element;
     private int result;
 
-    @Given("the number '{}'")
+    @Given("the number {}")
     public void initElement(int element) {
         this.element = element;
     }
 
-    @When("the number is multiplied by '{}'")
+    @When("this number is multiplied by {}")
     public void doMultiply(int mult) {
         this.result = element * mult;
     }
 
-    @When("the result should be '{}'")
+    @When("the result should be {}")
     public void checkResult(int expectedResult) {
         Assertions.assertThat(this.result).isEqualTo(expectedResult);
     }
