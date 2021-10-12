@@ -17,7 +17,6 @@ public class Client {
         return name;
     }
 
-
     public List<Account> getAccounts() {
         return accounts;
     }

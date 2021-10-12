@@ -14,7 +14,6 @@ public class Account {
             return code;
         }
 
-
         public double getBalance() {
             return balance;
         }
