@@ -14,6 +14,7 @@ public class Account {
             return code;
         }
 
+
         public double getBalance() {
             return balance;
         }
@@ -22,4 +23,3 @@ public class Account {
             this.balance = balance;
         }
     }
-}

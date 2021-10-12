@@ -7,7 +7,7 @@ public class Client {
 
     private final String name;
 
-    private final List<Account> accounts = new ArrayList<>()t<>();
+    private final List<Account> accounts = new ArrayList<>();
 
     public Client(String name) {
         this.name = name;
@@ -16,6 +16,7 @@ public class Client {
     public String getName() {
         return name;
     }
+
 
     public List<Account> getAccounts() {
         return accounts;
